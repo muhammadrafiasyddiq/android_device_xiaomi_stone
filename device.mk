@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libhidlbase_shim 
 
 # Graphics
     PRODUCT_PACKAGES += \
