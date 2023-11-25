@@ -157,6 +157,9 @@ on property:sys.tp.grip_enable=270
     write /sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_edge_mode 2
 #L19A-T code for HQ-256400 add by qianxiaoming at 2022/10/18 end
 
+# Audio dump
+    mkdir /data/vendor/audiohal 0771 system audio
+    mkdir /data/vendor/audiohal/audio_param 0771 system audio
 
 on init
     insmod /vendor/lib/modules/millet_core.ko
