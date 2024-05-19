@@ -252,8 +252,13 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
@@ -340,7 +345,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
 	hardware/mediatek \
-	hardware/xiaomi
+	hardware/xiaomi \
+	hardware/lineage/interfaces/power-libperfmgr
     
 
 # NFC
