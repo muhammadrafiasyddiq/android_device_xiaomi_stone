@@ -311,7 +311,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-mediatek.xml \
 	$(LOCAL_PATH)/config/permissions/privapp-permissions-whitelist-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-whitelist-system_ext.xml
 
-
+# Cam
+PRODUCT_PACKAGES += \
+	android.hardware.camera.common@1.0.vendor:64 \
+	android.hardware.camera.device@1.0.vendor:64 \
+	android.hardware.camera.device@3.2.vendor:64 \
+	android.hardware.camera.device@3.3.vendor:64 \
+	android.hardware.camera.device@3.4.vendor:64 \
+	android.hardware.camera.device@3.5.vendor:64 \
+	android.hardware.camera.device@3.6.vendor:64 \
+	android.hardware.camera.provider@2.4.vendor:64 \
+	android.hardware.camera.provider@2.5.vendor:64 \
+	android.hardware.camera.provider@2.6.vendor:64 
+	
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
