@@ -1640,3 +1640,10 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libmifpext.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+
+# Vibrator
+vendor/bin/hw/android.hardware.vibrator-service.mediatek
+vendor/etc/init/vibrator-mtk-default.rc
+vendor/etc/vintf/manifest/vibrator-mtk-default.xml
+vendor/lib/libvibrator.so
+vendor/lib64/libvibrator.so
