@@ -59,7 +59,8 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so \
 	$(TARGET_OUT_VENDOR)/lib64/libpq_cust_base.so \
 	$(TARGET_OUT_VENDOR)/lib64/libpq_prot.so \
-	$(TARGET_OUT_VENDOR)/lib64/libpqparamparser.so \    $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
+	$(TARGET_OUT_VENDOR)/lib64/libpqparamparser.so \
+	$(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so \
@@ -276,8 +277,8 @@ SENSORS_SYMLINKS := \
 # Audio symlinks
 AUDIO_SYMLINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/hw/audio.primary.$(TARGET_BOARD_PLATFORM).so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/audio.r_submix.$(TARGET_BOARD_PLATFORM).so
-
+	$(TARGET_OUT_VENDOR)/lib64/hw/audio.r_submix.$(TARGET_BOARD_PLATFORM).so 
+	
 # VPUD symlink
 VPUD_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/bin/v3avpud
