@@ -1,0 +1,3 @@
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                                  u:object_r:nxpnfc_hwservice:s0
+vendor.nxp.nxpnfclegacy::INxpNfcLegacy                      u:object_r:nxpnfc_hwservice:s0
