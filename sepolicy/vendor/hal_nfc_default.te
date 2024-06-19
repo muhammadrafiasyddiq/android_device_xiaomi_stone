@@ -1,0 +1,4 @@
+type nxpnfc_hwservice, hwservice_manager_type;
+
+
+allow hal_nfc_default nxpnfc_hwservice:hwservice_manager { find add };  
