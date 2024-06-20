@@ -24,3 +24,6 @@
 /sys/devices/virtual/touch/touch_dev/panel_vendor       u:object_r:version_info:s0
 /sys/devices/virtual/touch/touch_dev/touch_vendor       u:object_r:version_info:s0
 /sys/devices/virtual/touch/touch_dev/panel_display      u:object_r:version_info:s0
+
+# Fingerprint
+/data/vendor/gf_data(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
