@@ -7,3 +7,8 @@ type vendor_sysfs_usb_supply, fs_type, sysfs_type;
 # Touch gestures
 type sysfs_tp_gesture, fs_type, sysfs_type;
 
+# Version Info
+type version_info, fs_type, sysfs_type;
+
+#TP
+type sysfs_tp_virtual_prox, fs_type, sysfs_type;
