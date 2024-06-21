@@ -8,6 +8,8 @@ allow hal_sensors_default ion_device:chr_file rw_file_perms;
 allow hal_sensors_default system_file:dir r_dir_perms;
 allow hal_sensors_default sysfs_sensor:dir r_dir_perms;
 allow hal_sensors_default sysfs_sensor:file rw_file_perms;
+allow hal_sensors_default sysfs_tp_virtual_prox:file rw_file_perms;
+allow hal_sensors_default version_info:file rw_file_perms;
 allow hal_sensors_default hwmsensor_device:chr_file r_file_perms;
 allow hal_sensors_default sensorlist_device:chr_file rw_file_perms;
 allow hal_sensors_default m_acc_misc_device:chr_file rw_file_perms;
@@ -32,5 +34,7 @@ allow hal_sensors_default mnt_vendor_file:dir search;
 allow hal_sensors_default merged_hal_service:fd use;
 allow hal_sensors_default sysfs_mtk_nanohub_state:file r_file_perms;
 
+
 allow hal_sensors_default system_server:binder call;
+
 
