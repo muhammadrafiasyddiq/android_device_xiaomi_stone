@@ -1,6 +1,8 @@
 # Graphics
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?         u:object_r:vendor_sysfs_displayfeature:s0
+/sys/devices/platform/soc/14013000.dsi/14013000.dsi.0/panel_event u:object_r:sysfs_graphics:s0
 /sys/devices/platform/soc/14013000.dsi/14013000.dsi.1/panel_event u:object_r:sysfs_graphics:s0
+
 
 # Health
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mt6789 u:object_r:hal_health_default_exec:s0
@@ -40,4 +42,3 @@
 # NFC
 /dev/nq-nci             u:object_r:nfc_device:s0
 /dev/ttyACM1           u:object_r:nfc_device:s0
-/dev/pn54x             u:object_r:nfc_device:s0
