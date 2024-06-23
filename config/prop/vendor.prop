@@ -91,6 +91,8 @@ ro.vendor.builtin_fm_antenna_support=1
 
 # Display
 debug.sf.use_phase_offsets_as_durations=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.disable_client_composition_cache=1
 debug.sf.late.sf.duration=27600000
 debug.sf.late.app.duration=20000000
 debug.sf.early.sf.duration=27600000
@@ -137,15 +139,6 @@ ro.hardware.gralloc=common
 ro.hardware.hwcomposer=mtk_common
 ro.hardware.kmsetkey=beanpod
 ro.hardware.vulkan=mali
-
-# LMKD
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.psi_partial_stall_ms=70
-ro.lmk.swap_free_low_percentage=30
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=2
 
 # Logd
 ro.logd.kernel=false
