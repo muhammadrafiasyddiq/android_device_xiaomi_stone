@@ -103,3 +103,31 @@ persist.vendor.sensor.cali_sensor=111001100000000
 
 # gralloc4 log
 persist.log.tag.gralloc4=S
+
+# Memory Optimization
+ro.config.dha_cached_min=16
+ro.config.dha_cached_max=32
+
+# Thermal Management
+ro.mtk_thermal_monitor.enabled=true
+persist.thermal_config.mitigation=1
+
+# Thermal Configuration
+ro.config.thermal_limit=75
+ro.config.thermal_dcs=40
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
+# Lmk Properties
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.use_minfree_levels=true
+ro.lmk.upgrade_pressure=50
+ro.lmk.downgrade_pressure=75
+ro.lmk.thrashing_limit=30
+ro.lmk.thrashing_limit_decay=50
+ro.config.low_ram=false
+ro.lmk.use_psi=true
+ro.lmk.kill_heaviest_task=false
+ro.lmk.swap_free_low_percentage=10
