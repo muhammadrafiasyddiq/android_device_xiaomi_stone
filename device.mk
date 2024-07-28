@@ -239,7 +239,8 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     wpa_supplicant \
-    android.hardware.tetheroffload.control@1.1.vendor
+    libwifi-hal-wrapper \
+    android.hardware.tetheroffload.control@1.1.vendor \
     android.hardware.tetheroffload.config@1.0.vendor \
 
 PRODUCT_PACKAGES += \
