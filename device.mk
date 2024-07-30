@@ -383,6 +383,7 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     init.project.rc \
     init.insmod.sh \
+    init.panel_info.sh \
     ueventd.mtk.rc \
     init.recovery.mt6789.rc \
     init.recovery.usb.rc \

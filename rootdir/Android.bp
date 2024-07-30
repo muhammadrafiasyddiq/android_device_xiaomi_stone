@@ -108,6 +108,12 @@ sh_binary {
     vendor: true
 }
 
+sh_binary {
+    name: "init.panel_info.sh",
+    src: "bin/init.panel_info.sh",
+    vendor: true
+}
+
 prebuilt_etc {
     name: "init.insmod.mt6789.cfg",
     src: "etc/init.insmod.mt6789.cfg",
