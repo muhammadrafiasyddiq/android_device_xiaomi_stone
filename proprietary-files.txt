@@ -1562,6 +1562,10 @@ vendor/lib64/libksensor.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/sensors.touch.detect.so
 
+# Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/odm/etc/init/stone_p/android.hardware.secure_element@1.2-service-mediatek.rc:vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+
 # TEE
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
