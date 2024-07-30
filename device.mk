@@ -438,7 +438,19 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 #  (IMS)
-    
+PRODUCT_BOOT_JARS += \
+    mediatek-carrier-config-manager \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-com.mediatek.ims.xml
+
 # Update engine
 PRODUCT_PACKAGES += \
     checkpoint_gc \
