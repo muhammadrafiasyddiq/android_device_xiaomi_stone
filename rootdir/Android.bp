@@ -126,3 +126,9 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true
 }
+
+prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "etc/fstab.enableswap",
+    vendor: true
+}

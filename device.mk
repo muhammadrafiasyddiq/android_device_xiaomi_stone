@@ -374,6 +374,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.emmc \
+    fstab.enableswap \
     init.cgroup.rc \
     init_connectivity.rc \
     init.connectivity.common.rc \
