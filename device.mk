@@ -58,20 +58,22 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=ext4 \
     POSTINSTALL_OPTIONAL_vendor=true
  
+# Audio 64bit
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
+ 
 # Audio
 PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
-	android.hardware.audio@7.0-impl \
-	android.hardware.audio.sounddose-vendor-impl \
-	android.hardware.audio.effect@7.0-impl \
-	audioclient-types-aidl-cpp.vendor \
-	audio.bluetooth.default \
-	audio.usb.default \
-	libalsautils \
-	libopus.vendor \
-	libtinycompress \
-	libnbaio_mono \
-	libaudiofoundation.vendor
+	android.hardware.audio@7.0-impl:64 \
+	android.hardware.audio.effect@7.0-impl:64 \
+	audioclient-types-aidl-cpp.vendor:64 \
+	audio.bluetooth.default:64 \
+	audio.usb.default:64 \
+	libalsautils:64 \
+	libopus.vendor:64 \
+	libtinycompress:64 \
+	libnbaio_mono:64 \
+	libaudiofoundation.vendor:64
 	
 	
 # VENDOR BOOT RAMDISK GENERIC
@@ -81,10 +83,10 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	android.hardware.bluetooth.audio-impl \
-	libbluetooth_audio_session \
-	android.hardware.bluetooth@1.0.vendor \
-	android.hardware.bluetooth@1.1.vendor
+	android.hardware.bluetooth.audio-impl:64 \
+	libbluetooth_audio_session:64 \
+	android.hardware.bluetooth@1.0.vendor:64 \
+	android.hardware.bluetooth@1.1.vendor:64
 	
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
